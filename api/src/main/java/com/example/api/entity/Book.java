@@ -3,14 +3,13 @@ package com.example.api.entity;
 import java.util.Set;
 
 import javax.persistence.*;
-
+import com.example.api.entity.Category;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 @Entity
 @Table(name = "book")
 public class Book {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id", unique = true, nullable = false)
@@ -61,5 +60,12 @@ public class Book {
         this.chapter = chapters;
     }
 
-
+    @ManyToMany(fetch = FetchType.LAZY,
+    mappedBy = "books",
+    cascade = {
+        CascadeType.PERSIST,
+        CascadeType.MERGE
+    })
+    @JsonIgnoreProperties("books")
+    private Set<Category> categorys;
 }
