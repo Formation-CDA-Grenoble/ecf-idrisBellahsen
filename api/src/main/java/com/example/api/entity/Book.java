@@ -49,17 +49,6 @@ public class Book {
 
 
     
-    @OneToMany(mappedBy = "chapter")
-    @JsonIgnoreProperties("chapter")
-    private Set<Chapter> articles;
-
-    public Set<Chapter> getArticles() {
-        return this.articles;
-    }
-
-    public void setArticles(Set<Chapter> articles) {
-        this.articles = articles;
-    }
 
 
 }
