@@ -1,7 +1,10 @@
 package com.example.api.entity;
 
+import java.util.Set;
 
 import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 @Entity
@@ -43,5 +46,20 @@ public class Book {
     public void setPicture(String picture) {
         this.picture = picture;
     }
+
+
+    
+    @OneToMany(mappedBy = "chapter")
+    @JsonIgnoreProperties("chapter")
+    private Set<Chapter> articles;
+
+    public Set<Chapter> getArticles() {
+        return this.articles;
+    }
+
+    public void setArticles(Set<Chapter> articles) {
+        this.articles = articles;
+    }
+
 
 }

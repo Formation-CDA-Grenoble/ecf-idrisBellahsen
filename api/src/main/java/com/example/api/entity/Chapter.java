@@ -1,7 +1,8 @@
 package com.example.api.entity;
 
-
 import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 @Entity
@@ -43,5 +44,17 @@ public class Chapter {
         this.content = content;
     }
 
+    @ManyToOne
+    @JsonIgnoreProperties("book")
+    @JoinColumn(name = "book_id")
+    private Book book;
+
+    public Book getBook() {
+        return this.book;
+    }
+
+    public void setBook(Book book) {
+        this.book = book;
+    }
 
 }
