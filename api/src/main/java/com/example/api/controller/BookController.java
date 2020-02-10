@@ -6,6 +6,7 @@ import javax.validation.Valid;
 
 import com.example.api.entity.Book;
 import com.example.api.repository.BookRepository;
+import com.example.api.repository.ChapterRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
