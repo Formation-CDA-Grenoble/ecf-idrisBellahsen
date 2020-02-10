@@ -32,7 +32,7 @@ public class Chapter {
         this.name = name;
     }
 
-    @Column(name = "content", unique = true, nullable = false)
+    @Column(name = "content",  nullable = false)
     private String content;
 
     public String getContent() {
