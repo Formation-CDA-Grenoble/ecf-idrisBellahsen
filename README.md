@@ -120,6 +120,22 @@ Inclure vos productions dans le dépôt Git, dans un dossier **mockups**, ou le 
 
 > _Liens de partage de mes wireframes:_
 
+Homepage:
+https://wireframe.cc/evvx78
+
+Liste des livre dans une categorie:
+
+https://wireframe.cc/6XvwnH
+
+Page du livre:
+
+https://wireframe.cc/kb9Q2Q
+
+Page chapitre 
+
+https://wireframe.cc/2VdgGu
+
+
 #### Bonus
 
 Réaliser des maquettes (incluant couleurs, fontes, et autres éléments de design) à la place des _wireframes_.
