@@ -152,15 +152,18 @@ Réaliser des maquettes (incluant couleurs, fontes, et autres éléments de desi
 
 - Choisiriez-vous plutôt une base de données de type SQL, ou NoSQL pour ce projet? Justifiez votre choix.
 
-> _Ma réponse:_
+Sql, je ne fait pas du big data et je suis plus a l'aise avec sql.
 
 - Combien d'entités sont-elles nécessaires pour ce projet, et que représenterait chacune d'entre elles? Quelles propriétés pourraient-elles avoir?
 
-> _Ma réponse:_
+4 entités, une entité livre, une entité chapitre, une entité utilisateur, une entité catégorie
 
 - Quelles relations envisageriez-vous entre ces entités? Précisez pour chaque relation: One-to-one, One-to-many, Many-to-many, composition ou aggrégation.
 
-> _Ma réponse:_
+auteur a livre relation: one to many. composition
+categorie a livre : many to many.
+livre a chapitre: one to many. composition
+
 
 #### 💻 Travail à réaliser
 
@@ -168,7 +171,7 @@ A l'aide de l'outil de votre choix (outil suggéré: [Lucidchart](https://www.lu
 
 Inclure votre production dans votre dépôt ou donner le **lien de partage** de votre fichier.
 
-> _Lien de partage de mon MCD:_
+https://www.lucidchart.com/invitations/accept/ac55433d-3a97-4d77-ac3b-3443c0d91f99
 
 Puis, à l'aide de l'interface de votre choix (outil suggéré: PHPMyAdmin pour une base de données MySQL/MariaDB), créez le schéma de base de données (tables, colonnes...) nécessaire au bon fonctionnement du projet.
 
