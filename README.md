@@ -70,15 +70,22 @@ Comme personne n'est parfait, il n'est pas exclu que cet examen contienne des co
 
 - A combien de types d'utilisateurs le projet s'adresse-t-il? Nommez chacun de ces types.
 
+
 > _Ma réponse:_
+
+2  l'auteur et les lecteurs.
 
 - Combien d'applications faudra-t-il créer et quel sera le type de chacun d'entre elle?
 
 > _Ma réponse:_
 
+3, une api, un front( react), une aplli mobile (react nativ)
+
 - Quelles sont les fonctionnalités principales du projet? Listez-les par ordre de priorité (de la plus importante à la moins importante).
 
 > _Ma réponse:_
+
+Publication de livres, publication de chapitre ,liste des livre, liste des chapite, lecture des chapitre, systeme de like, partage sur les reseaux sociaux.
 
 #### 💻 Travail à réaliser
 
