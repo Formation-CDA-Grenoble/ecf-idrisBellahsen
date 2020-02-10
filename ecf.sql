@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le :  lun. 10 fév. 2020 à 11:11
+-- Généré le :  lun. 10 fév. 2020 à 12:56
 -- Version du serveur :  10.2.6-MariaDB
 -- Version de PHP :  7.3.5
 
@@ -31,9 +31,17 @@ SET time_zone = "+00:00";
 CREATE TABLE `book` (
   `id` int(10) UNSIGNED NOT NULL,
   `title` varchar(255) NOT NULL,
-  `picture` varchar(255) NOT NULL,
-  `user_id` int(10) UNSIGNED NOT NULL
+  `picture` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `book`
+--
+
+INSERT INTO `book` (`id`, `title`, `picture`) VALUES
+(1, 'test book 1', 'test picture book 1'),
+(2, 'test book 2', 'test picture 3'),
+(3, 'test book 3', 'test picture 3');
 
 -- --------------------------------------------------------
 
@@ -71,6 +79,31 @@ CREATE TABLE `chapter` (
   `book_id` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Déchargement des données de la table `chapter`
+--
+
+INSERT INTO `chapter` (`id`, `name`, `content`, `book_id`) VALUES
+(5, 'tetst chapter ', 'test cotnent', 1),
+(7, 'test chapter 2', 'test content 2', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `hibernate_sequence`
+--
+
+CREATE TABLE `hibernate_sequence` (
+  `next_val` bigint(20) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `hibernate_sequence`
+--
+
+INSERT INTO `hibernate_sequence` (`next_val`) VALUES
+(1);
+
 -- --------------------------------------------------------
 
 --
@@ -93,8 +126,7 @@ CREATE TABLE `user` (
 -- Index pour la table `book`
 --
 ALTER TABLE `book`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `user_id` (`user_id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `category`
@@ -115,7 +147,7 @@ ALTER TABLE `category_book`
 --
 ALTER TABLE `chapter`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `book_id` (`book_id`);
+  ADD KEY `book_id` (`book_id`);
 
 --
 -- Index pour la table `user`
@@ -131,7 +163,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `book`
 --
 ALTER TABLE `book`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT pour la table `category`
@@ -149,7 +181,7 @@ ALTER TABLE `category_book`
 -- AUTO_INCREMENT pour la table `chapter`
 --
 ALTER TABLE `chapter`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT pour la table `user`
@@ -160,12 +192,6 @@ ALTER TABLE `user`
 --
 -- Contraintes pour les tables déchargées
 --
-
---
--- Contraintes pour la table `book`
---
-ALTER TABLE `book`
-  ADD CONSTRAINT `fk_book_user` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE;
 
 --
 -- Contraintes pour la table `category_book`
