@@ -45,7 +45,7 @@ public class Chapter {
     }
 
     @ManyToOne
-    @JsonIgnoreProperties("book")
+    @JsonIgnoreProperties("chapter")
     @JoinColumn(name = "book_id")
     private Book book;
 
