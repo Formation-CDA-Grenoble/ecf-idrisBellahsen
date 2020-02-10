@@ -201,7 +201,7 @@ Ecrivez vous-mêmes le code nécessaire à la migration de votre schéma au lieu
 
 - Combien d'entités envisagez-vous de créer et pourquoi? Combien de contrôleurs envisagez-vous de créer et pourquoi?
 
-> _Ma réponse:_
+3 entité une pour chaque table la table intermédiaire sera géré par le framework. (je me debarasse aussi de ma table user pour simplifié)
 
 - Un CRUD suffira-t-il pour chacune des entités, ou y a-t-il des entités pour lesquelles il faudra définir de la logique spécifique?
 
