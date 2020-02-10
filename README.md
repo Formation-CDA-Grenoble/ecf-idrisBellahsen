@@ -79,13 +79,13 @@ Comme personne n'est parfait, il n'est pas exclu que cet examen contienne des co
 
 > _Ma réponse:_
 
-3, une api, un front( react), une aplli mobile (react nativ)
+3, une api, un appli web front( react), une appli mobile (react nativ)
 
 - Quelles sont les fonctionnalités principales du projet? Listez-les par ordre de priorité (de la plus importante à la moins importante).
 
 > _Ma réponse:_
 
-Publication de livres, publication de chapitre ,liste des livre, liste des chapite, lecture des chapitre, systeme de like, partage sur les reseaux sociaux.
+Publication de livres, publication de chapitre ,liste des livre, liste des chapitre, lecture d'un chapitre, systeme de catégorie par genres,systeme de like, partage sur les reseaux sociaux.
 
 #### 💻 Travail à réaliser
 
@@ -95,7 +95,7 @@ Inclure votre production dans le dépôt Git, ou le **lien de partage** du table
 
 > _Lien de partage de mon tableau Trello:_
 
----
+https://trello.com/invite/b/VOxhugqL/31d156e6c6cf9b1f53ae30bd0fba00d1/dev-project-ecf
 
 ### Etape 2. Maquetter l'application
 
@@ -106,11 +106,11 @@ Inclure votre production dans le dépôt Git, ou le **lien de partage** du table
 
 - Combien de pages sont-elles nécessaires, à votre avis, pour répondre aux spécifications fonctionnelles définies ci-dessus?
 
-> _Ma réponse:_
+4
 
 - A quoi le plan du site ressemblera-t-il? Quelle page permettra de passer à quelle autre?
 
-> _Ma réponse:_
+Page accueil qui liste tout les livre, navbar qui liste tout les categories. page categorie qui liste tout les livre de la categorie. page livre qui liste tout les chapitre. page du chapitre qui affiche le contenue.
 
 #### 💻 Travail à réaliser
 
